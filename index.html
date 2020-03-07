@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> Assignment 3</title>
+
+        <!-- Including jQuery -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+
+        <!-- Including Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        <!-- Including CSS  -->
+        <link rel="stylesheet" type="text/css" href="/index.css">   
+
+        <script src="client.js"></script>
+    </head>
+    <body>
+      <h1>SENG 513 - Assignment 3</h1>
+
+      <div class="container">
+          <div class="row chat-data">
+              <div class="col-8">
+                  <div class="row userinfo">
+                    <p>You are</p>&nbsp;<p id="username"></p>
+                  </div>
+                  <div id="chatbox" class="row chatbox align-items-end">
+                    <ul id="messages"></ul>
+                  </div>                
+              </div>
+  
+              <div class="col-4">
+                <div class="row userinfo">
+                  <p>Online Users</p>
+                </div>
+                  <div class="userbox">
+                      <ul id="users"></ul>
+                  </div>
+              </div>
+          </div>
+          <div class="row chat-inputs">
+              <div class="col-12">
+                  <form action="">
+                    <div class="row">
+                      <div class="col-11">
+                        <input id="message-input" autocomplete="off"/>
+                      </div>
+                      <div class="col-1">
+                        <button id="send-button" class="btn btn-outline-dark">Send</button>
+                      </div>
+                    </div>
+
+   
+                
+                    </form>
+              </div>
+          </div>
+      </div>
+
+      <script src="/socket.io/socket.io.js"></script>
+      
+        
+    </body>
+
+    
+</html>
